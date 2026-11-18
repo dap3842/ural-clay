@@ -1,0 +1,17 @@
+article {min-width:0}
+article > section > p:not(.intro) {font-family: Georgia, serif; font-size: 1.12em; line-height: 1.65; text-wrap: pretty}
+#chapter-4 {background: #f0e0ce; border-top: 3px solid var(--rust); padding: clamp(20px, 4vw, 44px); margin-bottom: 0}
+#chapter-4 h3 {border-top: 1px solid var(--line); padding-top: .8em; margin-top: 1.5em}
+.closing {background: #49261e; color: #fff3e3; padding: clamp(32px, 6vw, 86px) clamp(20px, 5vw, 64px); border: 0; font-size: 17px}
+.closing-inner {max-width: 992px; margin: auto; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: clamp(24px, 7vw, 100px)}
+.closing h2 {margin-block: .35em; color: #f3bc9b}
+.closing .credit {font-size: .85em; color: #f2ccba}
+.closing nav {position: static; border-color: #a77968}
+.closing ol {margin-block: 0 .5em}
+.closing li {padding: 0}
+.closing a {color: inherit; display: inline-flex; align-items: center; min-height: 44px}
+.closing .return {color: #f3bc9b}
+@media (max-width: 720px) {
+  .closing-inner {grid-template-columns: 1fr}
+  #chapter-4 {margin-inline: -8px}
+}
